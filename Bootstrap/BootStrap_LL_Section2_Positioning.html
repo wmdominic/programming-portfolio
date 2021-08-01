@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags for Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Icon Fonts Style Sheet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <title>Learning Bootstrap with CSS!</title>
+    </head>
+    <body class="m-5">
+        <!-- POSITIONING -->
+        <h1>Positioning</h1>
+        <h2>Static, Relative, Absolute, Fixed, Sticky</h2>
+        <p><strong>Static</strong>: Default; natural order/layout.<br>
+            <strong>Sticky</strong>: The element will position based on the user's scroll position. The element will remain relative until it appears on the screen. Once the element reaches the top of the window, it will remain there until it reaches the end of the container it resides in (or the user cannot scroll anymore).<br>
+            <strong>Relative</strong>: The element will remain where it normally would go in the natural layout (like static), but we can off-set it from that spot by adding or adjusting size, margins, or padding. <br>
+            <strong>Absolute</strong>: The element is removed from where it would normally go and is positioned in relation to the nearest relatively positioned parent. If no parent or previous element has a relative position, the window will be the frame of reference or "parent element." <br>
+            <strong>Fixed</strong>: The element would move relative to the viewport, which is typically the browser window. </p>
+            
+
+
+        <h1 class="mt-5">Arrangement Properties</h1>
+        <h2>{Property}-{Position}</h2>
+        <p>You can utilize Bootstrap to place an element at certain locations on a page, though this does not have as much freedom as using CSS, though it does have its advantages, especially when wanting to place things at specific points of the page.</p>
+        <p>The four properties in positioning elements within Bootstrap are <strong>start, top, end, bottom</strong>.</p>
+        <p>The three position values within Bootstrap are <strong>0, 50, 100</strong>. Although we do not put a unit of measurement on it, the value is in percentage.</p>
+        <!-- Arrangement Properties -->
+        <!-- {PRO}-{POS} {PRO} = which side of the page we want it to sit  {POS} = which determines if the position is the left side, middle, or right.-->
+        <!-- if we do top-0 and end-0, this will place the element at the top right-hand side of the page. -->
+        <!-- Translate (translate-middle), which can be used to center things in the middle of the corners. -->
+        
+
+        <h1 class="mt-5">Static Positioning</h1>
+        <p>This is the default positioning of all elements and the natural layout that occurs from how the code is written in HTML.</p>
+
+        <div class="d-grid gap-3 mt-5 bg-dark" style="padding: 10px">
+            <div class="bg-secondary text-white p-2">William</div>
+            <div class="bg-secondary text-white p-2">Jeremy</div>
+            <div class="bg-secondary text-white p-2">Heidi</div>
+            <div class="bg-secondary text-white p-2">Sarah</div>
+            <div class="bg-secondary text-white p-2">Jayce</div>
+        </div>
+
+
+        <h1 class="mt-5">Sticky Positioning</h1>
+        <p>With <em>sticky positioning</em>, the element will appear as the user scrolls down the page, but as the element reaches the top of the window, it will remain "stuck" there until it reaches the end of its container. <br>Since the red Jeremy element is within a div container, it will no longer remain at the top of the page once the entire div container has finished passing the top of the window.</p>
+
+        <div class="d-grid gap-3 mt-5 bg-dark" style="padding: 10px">
+            <div class="bg-secondary text-white p-2">William</div>
+            <div class="sticky-top bg-danger text-black p-2">Jeremy</div>
+            <div class="bg-secondary text-white p-2">Heidi</div>
+            <div class="bg-secondary text-white p-2">Sarah</div>
+            <div class="bg-secondary text-white p-2">Jayce</div>
+        </div>
+
+
+        <h1 class="mt-5">Relative Positioning</h1>
+        <p>With <em>relative positioning</em>, the element remains in the order it was in within the code. In other words, it stays relative to it's original placement. <br>In this example, we can see that the blue Jeremy element was set to "position-relative". Setting an object to relative will not move the element anywhere, as it is relative to all the other elements within the layout, but when we add 50% to the top of the Jeremy element (top-50), it will move as we specified, down 50% from it's original placement, relative to its sibling elements.</p>
+
+        <div class="d-grid gap-3 mt-5 bg-dark" style="padding: 10px">
+            <div class="bg-secondary text-white p-2">William</div>
+            <div class="position-relative top-50 bg-info text-black p-2">Jeremy</div>
+            <div class="bg-secondary text-white p-2">Heidi</div>
+            <div class="bg-secondary text-white p-2">Sarah</div>
+            <div class="bg-secondary text-white p-2">Jayce</div>
+        </div>
+        
+
+        <h1 class="mt-5">Absolute Positioning</h1>
+        <p>With <em>absolute positioning</em>, the element is removed from its position within the code / layout. The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. <br>Because there is no positioned ancestor, this yellow Jeremy element, which has been assigned "position-absolute," is covering up the William element because it has been placed relative to the containing block (or div).</p>
+        
+        <div class="d-grid gap-3 mt-5 bg-dark" style="padding: 10px">
+            <div class="bg-secondary text-white p-2">William</div>
+            <div class="position-absolute bg-warning text-black p-2">Jeremy</div>
+            <div class="bg-secondary text-white p-2">Heidi</div>
+            <div class="bg-secondary text-white p-2">Sarah</div>
+            <div class="bg-secondary text-white p-2">Jayce</div>
+        </div>
+        
+        
+        <h1 class="mt-5">Fixed Positioning</h1>
+        <p>With <em>Fixed positioning</em>, an element is removed from its position within the layout and is given a position / location relative to the viewport, meaning it will always stay at the same place, regardless of where the page has been scrolled. <br>Notice the green Jeremy element that has been fixed to the bottom-right corner of the page.</p>
+
+        <div class="position-fixed bottom-0 end-0 bg-success text-white p-2">Jeremy</div>
+
+
+        <h1 class="mt-3">More positioning</h1>
+        <button class="position-relative d-inline-block mt-3 py-1 px-2 rounded-2" style="background-color: lightskyblue; font-weight: 600; border: none;">JEREMY <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" overflow="visible" fill="rgb(255, 243, 73)" class="position-absolute top-0 start-100 translate-middle bi bi-stars" stroke="black" stroke-width="1px" viewBox="0 0 16 16" >
+            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+          </svg></button>
+               
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>

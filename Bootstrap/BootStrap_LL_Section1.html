@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags for Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Icon Fonts Style Sheet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <title>Learning Bootstrap with CSS!</title>
+    </head>
+
+    <body>
+        <!--ICONS-->
+        <h1>This is a test for icons. This icon uses the &lt;i&gt; tag. <i class="bi bi-sun-fill" style="color: rgb(240, 240, 12)"></i></h1>
+
+        <h2>This is an icon using SVG. This is a standard SVG, not an SVG Sprite, as some browsers do not support SVG Sprite. <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16" style="color: red;"><path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/></svg></h2>
+
+        <!--To center an object, you do class mx-auto (That's 50% left, 50% right) and there must be [display: block] set and [width: size]-->
+        <h2 class="mx-auto" style="display: block; width: 100%; text-align: center;" >This is another SVG icon. This time I wanted to try centering the entire element. I also changed the fill color, stroke color, and overflow to present the entire icon border. <svg width="32" height="32" fill="turquoise" stroke="black" overflow="visible" class="bi bi-heart-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg></h2>
+
+
+        <!--REBOOT: attempts to create a consistent baseline across browsers.-->
+
+        <h1>My name is William Lewandowski.</h1>
+        <p>I am a returning student at MSUM, pursuing my second Bachelor's degree.</p>
+
+        <!--Because Bootstrap uses rems (root ems), which is what different elements will follow, if Bootstrap has a specific size specified in the background and requires a different way to change. h1 (which Bootstrap has a specified rems amount for) will not change when a specific font-size is specified, but p does not have a specific rems amount default, so it will inherit the specified amount listed. -->
+        <div style="font-size: 32px; color: seagreen">
+            <h1>My boyfriend's name is Jeremy.</h1>
+            <p>Jeremy is going to Boston University to get his Master's in Computer Science.</p>
+        </div>
+
+        <h1>We make a great duo.</h1>
+        <p>Being with Jeremy, I couldn't be happier!! <i class="bi bi-emoji-heart-eyes" style="color: blue"></i></p>
+
+        <!--Box Sizing in Bootstrap-->
+        <div style="width: 500px; padding: 10px; background-color: tan;">
+            <h1>A Bootstrap Box</h1>
+            <p>"By the end of the unit, I had them write an essay and create a video documentary discussing identity. Some interviewed people. You could be completely creative, as long as you addressed: What role do you think colorism plays in your life? And how would you describe your identity? Some of them went with culture, some of them went with race, some of them identified with a job" (Delpit, 115).</p>
+        </div>
+
+        <!--The padding gets added to the size of the box, whereas the previous example, the padding stays contained within the 500px width. With the first example, you can declare how big your box is supposed to be, and it will stay that way. This keeps measurements much more manageable.-->
+        <div style="box-sizing: content-box; width: 500px; padding: 10px; background-color: powderblue;">
+            <h1>Not Bootstrap Box</h1>
+            <p>"By the end of the unit, I had them write an essay and create a video documentary discussing identity. Some interviewed people. You could be completely creative, as long as you addressed: What role do you think colorism plays in your life? And how would you describe your identity? Some of them went with culture, some of them went with race, some of them identified with a job" (Delpit, 115).</p>
+        </div>
+
+
+        <!-- This is optional Javascript Bootstrap Bundle with Popper. Many Bootstrap components require the use of JavaScript to function. This JavaScript contains the plugins and Popper needed to function correctly.This needs to be placed right above the body end-tag. This script is the bundle js file, instead of option 2, which separates the files up. -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+
+
+</html>

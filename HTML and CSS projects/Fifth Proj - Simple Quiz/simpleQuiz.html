@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+    
+   
+    
+<html>
+    <head>
+        <title>A Simple Quiz</title>
+        
+
+        <script type="text/javascript" src="js/QuizQuestion.js"></script>
+        <script type="text/javascript" src="js/SimpleQuiz.js"></script>
+
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            
+         //Welcome Greeting
+            com.williamdominic.showMessageToUser = function(username, message) {
+                alert("Hello " + username + ", " + message);
+            }
+        
+            com.williamdominic.showMessageToUser("Jeremy", "I Hope You Have An Amazing Day!");
+        
+        //Quiz Questions Loop
+        com.williamdominic.simpleQuiz = new com.williamdominic.SimpleQuiz();
+        com.williamdominic.simpleQuiz.renderAllQuestions();
+        
+        </script>
+    </body>
+</html>

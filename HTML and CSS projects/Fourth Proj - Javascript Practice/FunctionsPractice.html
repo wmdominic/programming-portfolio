@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="text/javascript">
+        function askUserForValues() {
+            var value1 = window.prompt("Height");
+            value1 = parseInt(value1);
+            var value2 = window.prompt("Width");
+            value2 = parseInt(value2);
+            var theResult = new Array(value1, value2);
+            return(theResult);
+        }
+        
+        function calculateRectArea(Height, Width) {
+            return(Height * Width);
+        }
+        
+        </script>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            var dimensions = askUserForValues();
+            var rectArea = calculateRectArea(dimensions[0], dimensions[1]);
+            window.alert("A Rectangle with the Height of " + dimensions[0] +
+                         " and a Width of " + dimensions[1] +
+                         " has an area of " + rectArea + ".");
+        </script>>
+            
+        </script>
+    </body>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags for Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Icon Fonts Style Sheet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <title>Learning Bootstrap with CSS!</title>
+    </head>
+
+    <body>
+        <!-- DISPLAY  d-{VAL}-->
+        <!-- Values: none; inline; inline-block; block; grid; table; table-cell; table-row; flex; inline-flex -->
+        <h1 class="my-3" style="color: #478d5d;">Display Classes</h1>
+        <h3 class="my-3" style="color: #236638;">d-block</h3>
+
+        <!-- The following example uses span elements because they would normally present in the same line together, but the use of the class d-block puts them on separate lines. -->
+        <span class="d-block">Monday</span>
+        <span class="d-block">Tuesday</span>
+        <span class="d-block">Wednesday</span>
+        <span class="d-block">Thursday</span>
+        <span class="d-block">Friday</span>
+
+        <h3 class="my-3" style="color: #236638;">d-inline</h3>
+
+        <!-- The following example uses div elements because they would normally present in separate lines, but the use of the class d-inline puts them together on the same line. -->
+        <div class="d-inline">Monday</div>
+        <div class="d-inline">Tuesday</div>
+        <div class="d-inline">Wednesday</div>
+        <div class="d-inline">Thursday</div>
+        <div class="d-inline">Friday</div>
+        
+        <h3 class="my-3" style="color: #236638;">d-inline</h3>
+
+        <!-- The d-inline-block allows you to add size to the block, which is not is not possible for the block or inline classes. -->
+        <div class="d-inline-block" style="width: 200px">Monday</div>
+        <div class="d-inline-block" style="width: 200px">Tuesday</div>
+        <div class="d-inline-block" style="width: 200px">Wednesday</div>
+        <div class="d-inline-block" style="width: 200px">Thursday</div>
+        <div class="d-inline-block" style="width: 200px">Friday</div>
+
+        <h3 class="my-3" style="color: #236638;">d-grid</h3>
+        <!-- The following is the grid display along with gap (which adds extra space between the elements). -->
+        <div class="d-grid gap-2">
+            <div class="bg-success p-2">Monday</div>
+            <div class="bg-success p-2">Tuesday</div>
+            <div class="bg-success p-2">Wednesday</div>
+            <div class="bg-success p-2">Thursday</div>
+            <div class="bg-success p-2">Friday</div>
+        </div>
+
+        <p class="my-4"> DISPLAY TABLE: I have decided not to include the d-table, d-table-cell, or d-table-row because they aren't extremely useful and there are much better ways to display information/code as a table than using the display table functions/classes. </p>
+
+        <!-- The following is d-flex, which are used more specifically with grid and flex-box grid.-->
+        <h3 class="my-3" style="color: #236638;">d-flex</h3>
+        <div class="d-flex">
+            <div style="width: 200px">Monday</div>
+            <div style="width: 200px">Tuesday</div>
+            <div style="width: 200px">Wednesday</div>
+        </div>
+        <div class="d-flex">
+            <div style="width: 200px">Thursday</div>
+            <div style="width: 200px">Friday</div>
+            <div style="width: 200px">Saturday</div>
+        </div>
+
+        <!-- The next is d-inline-flex. The main difference between flex and inline-flex is that flex creates a box/block around them and will put the container on its own line, whereas inline-flex will put the different containers on the same line. -->
+        <h3 class="my-3" style="color: #236638;">d-inline-flex</h3>
+        <div class="d-inline-flex">
+            <div style="width: 200px">Monday</div>
+            <div style="width: 200px">Tuesday</div>
+            <div style="width: 200px">Wednesday</div>
+        </div>
+        <div class="d-inline-flex">
+            <div style="width: 200px">Thursday</div>
+            <div style="width: 200px">Friday</div>
+            <div style="width: 200px">Saturday</div>
+        </div>
+
+        <!-- VIEWPORT BREAKPOINTS-->
+        <!-- d-{BP}-{VALUE} -->
+        <!-- The breakpoint values are the same as the container BP values [except fluid]: (none, sm, md, lg, xl, xxl)-->
+        <!-- This is useful if you want different things to change at certain window sizes. -->
+        <h1 class="my-3" style="color: #631bac;">Viewport Breakpoints</h1>
+        <h3 class="my-3" style="color: #813eec;">Show After Viewport (x): The block will not display until After the Viewport has occurred.</h3>
+        <div class="d-grid gap-2">
+            <span class="d-block d-sm-none bg-primary text-white p-2">After sm</span>
+            <span class="d-block d-md-none bg-success text-white p-2">After md</span>
+            <span class="d-block d-lg-none bg-danger text-white p-2">After lg</span>
+            <span class="d-block d-xl-none bg-warning text-white p-2">After xl</span>
+            <span class="d-block d-xxl-none bg-secondary text-white p-2">After xxl</span>
+        </div>
+
+        <h3 class="my-3" style="color: #813eec;">Show Until Viewport (x): The block will show until the specified Viewport.</h3>
+        <div class="d-grid gap-2">
+            <span class="d-none d-sm-block bg-primary text-white p-2">Until sm</span>
+            <span class="d-none d-md-block bg-success text-white p-2">Until md</span>
+            <span class="d-none d-lg-block bg-danger text-white p-2">Until lg</span>
+            <span class="d-none d-xl-block bg-warning text-white p-2">Until xl</span>
+            <span class="d-none d-xxl-block bg-secondary text-white p-2">Until xxl</span>
+        </div>
+
+        <!-- Gotten from https://getbootstrap.com/docs/4.0/utilities/display/ since the course video had this example, but did not go over the code for it. -->
+        <h3 class="my-3" style="color: #813eec;">Show Only at Viewport (x)</h3>
+        <div class="d-grid gap-2">
+            <span class="d-block d-sm-none bg-primary text-white p-2">Only at xs</span>
+            <span class="d-none d-sm-block d-md-none bg-success text-white p-2">Only at sm</span>
+            <span class="d-none d-md-block d-lg-none bg-danger text-white p-2">Only at md</span>
+            <span class="d-none d-lg-block d-xl-none bg-warning text-white p-2">Only at lg</span>
+            <span class="d-none d-xl-block d-xxl-none bg-secondary text-white p-2">Only at xl</span>
+            <span class="d-none d-xxl-block bg-info text-white p-2">Only at xxl</span>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>

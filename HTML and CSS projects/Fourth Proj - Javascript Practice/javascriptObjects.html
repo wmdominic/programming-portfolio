@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+    
+<html>
+    <head>
+        <title>JAVASCRIPT OBJECTS</title>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            var quizQuestion1 = new Object();
+            quizQuestion1.question = "On a scale from 1 to 10, how amazing is Jeremy?";
+            quizQuestion1.answer = "10";
+            quizQuestion1.wronganswer1 = "9";
+            quizQuestion1.wronganswer2 = "0";
+            quizQuestion1.wronganswer3 = "5";
+            
+            var quizQuestion2 = {
+                question:"What year did William graduate high school?",
+                answer:"2014",
+                wronganswer1:"2015",
+                wronganswer2:"2013",
+                wronganswer3:"1995",
+                wronganswer4:"2019"
+            };
+            
+            var quizQuestion3 = new Object();
+            quizQuestion3.question = "True or False: Jeremy is extremely smart and crazy adorable.";
+            quizQuestion3.answer = "True";
+            quizQuestion3.wronganswer1 = "False";
+            
+            var quizQuestion4 = {
+                question:"What is William's favorite color?",
+                answer:"Orange",
+                wronganswer1:"Blue",
+                wronganswer2:"Pink",
+                wronganswer3:"Yellow"
+            };
+            
+            var userAnsers = {};
+            
+            alert(quizQuestion1.question);
+            alert(quizQuestion2.question);
+            alert(quizQuestion3.question);
+            alert(quizQuestion4.question);
+            
+        </script>
+    </body>
+</html>

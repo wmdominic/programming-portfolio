@@ -1,0 +1,67 @@
+html {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: "Baskerville Old Face";
+}
+
+#First {
+    border-style: solid;
+    border-color: blue red;
+    padding: 30px;
+    background-color: #ffff4d;
+}
+
+.StreetSign2 {
+    border-style: solid;
+    border-color: limegreen;
+    border-width: 10px;
+    height: 400px;
+    width: auto;
+    margin-left: 30px;
+    float: left;
+    overflow: auto;
+    margin-right: 45px;
+}
+
+#Second {
+    background-color: tan;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #ff0080;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+hgroup > h1, hgroup > h2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+span {
+    float: left;
+    width: 0.7em;
+    font-size: 400%;
+    font-family: algerian, courier;
+    line-height: 80%;
+}
+
+.DropCap {
+    background-color: Tomato;
+    margin-right: 50px;
+    padding-bottom: 15px;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+.VisibleOverflow {
+    height: 70px;
+    width: auto;
+    background-color: orchid;
+    text-align: center;
+    margin-right: 50px;
+    overflow-x: hidden;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>JAVASCRIPT OPERATORS PRACTICE</title>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            //Arithmetic Operators, simple calculations (Plus Assignment Operator).
+            document.write("<h2>ARITHMETIC OPERATORS</h2>");
+            
+            var Assign = 123;
+            document.write("My assigned value is " + Assign + "</p>");
+            
+            var Addition = 10 + 20 + 30;
+            document.write("<p>10 plus 20 plus 30 equals " + Addition + "</p>");
+            
+            var Subtraction = 500 - 12 - 43 - 71;
+            document.write("<p>500 minus 12 minus 42 minus 71 equals " + Subtraction + "</p>");
+            
+            var Multiplication = 23 * 7;
+            document.write("<p>23 times 7 equals " + Multiplication + "</p>");
+            
+            var Division = 6464 / 8;
+            document.write("<p>6464 divided by 8 equals " + Division + "</p>");
+            
+            var Combination = ((12 * 4) / 2 + (13 + 9)) * -1;
+            document.write("<p>((12*4) / 2 + (13+9)) * -1 equals " + Combination + "</p>");
+            
+            //Increments and Decrements
+            document.write("<h2>INCREMENTS AND DECREMENTS</h2>");
+            
+            var x = 10, y = 15, a = 25, b = 50;
+            document.write("<b>PRE-INCREMENT OPERATOR EXAMPLE</b>");
+            document.write("<br> Value of X: " + x); //Original Value
+            document.write("<br> Value of X: " + (++x)); //Using increment operator prefix
+            document.write("<br> Value of X Incremented: " + x + "</br>"); //Incremented value
+            
+            document.write("<b>POST-INCREMENT OPERATOR EXAMPLE</b>");
+            document.write("<br> Value of Y: " + y); //Original Value
+            document.write("<br> Value of Y: " + y++); //Using increment operator suffix
+            document.write("<br> Value of Y Incremented: " + y + "</br>"); //Incremented value
+            
+            document.write("<b>PRE-DECREMENT OPERATOR EXAMPLE</b>");
+            document.write("<br> Value of A: " + a); //Original Value
+            document.write("<br> Value of A: " + --a); //Using decrement operator prefix
+            document.write("<br> Value of A: " + a + "</br>"); //Decremented value
+            
+            document.write("<b>POST-DECREMENT OPERATOR EXAMPLE</b>");
+            document.write("<br> Value of B: " + b); //Original Value
+            document.write("<br> Value of B: " + b--); //Using decrement operator suffix
+            document.write("<br> Value of B: " + b + "</br>"); //Decremented value
+            
+            //String Operator
+            document.write("<h2>STRING OPERATOR</h2>");
+            
+            var Start = "Words Words Words";
+            var End = "Cut 'em into thirds, thirds, thirds.";
+            document.write(Start + "<br>" + End);
+            
+            //Equality Operators
+            document.write("<h2>EQUALITY OPERATORS</h2>");
+            
+            var falseEqual = 66;
+            var trueEqual = 99;
+            document.write(falseEqual == trueEqual); //false statement
+            document.write("<p></p>");
+            document.write(trueEqual == trueEqual); //true statement
+            document.write("<p></p>");
+            document.write(falseEqual != trueEqual); //true statement
+            document.write("<p></p>");
+            document.write(trueEqual != trueEqual); //false statement
+            document.write("<p></p>");
+            
+            //Comparison Operators
+            document.write("<h2>COMPARISON OPERATORS</h2>");
+    
+            var BigNumb = "800";
+            var LilNumb = "2";
+            var SomeNumb = "61";
+            document.write("800 is less than 2: ");
+            document.write(BigNumb < LilNumb); //false
+            document.write("<br></br>");
+            document.write("61 is less than or equal to 800: ");
+            document.write(SomeNumb <= BigNumb); //true
+            document.write("<br></br>");
+            document.write("800 is greater than 2: ");
+            document.write(BigNumb > LilNumb); //true
+            document.write("<br></br>");
+            document.write("2 is greater than or equal to 61: ");
+            document.write(LilNumb >= SomeNumb); //false
+            document.write("<br></br>");
+
+            
+            //Logical Operators
+            document.write("<h2>LOGICAL OPERATORS</h2>");
+            var x = 5, y = 10;
+            document.write("x=5" + "</p>");
+            document.write("y=10" + "</p>");
+            document.write(("<p>") + ("x<10 and y<1: ") + (x < 10 && y < 1) + ("<br>") +  ("x<10 and y>1: ") + (x < 10 && y > 1));
+            //if both operands are true, then the entire statement is true
+            document.write(("<p>") + ("x=5 or y=0 is: ") + (x == 5 || y ==0));
+            //if one statement (operand) is true, then the entire statement is true
+            document.write(("<p>") + ("x=y is not true, but the exclamation point creates an illogical statement by inverting the boolean value.") + ("<br>") + ("x=y is ") + (!(x==y)) + ("."));
+            document.write("<p></p>" + "<p></p>" + "......Liar......");
+            //this statement will appear as true because the exclamation point will invert the boolean value.
+        </script>
+    </body>
+    
+</html>

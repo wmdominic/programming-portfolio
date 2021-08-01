@@ -1,0 +1,110 @@
+h1 {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#subtitle {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+tr {
+    background-color: rgba(215, 213, 107, .25);
+}
+
+.FavBlue {
+    color: royalblue;
+}
+
+.FavOrange {
+    color: orange;
+}
+
+td {
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+}
+
+p {
+    text-indent: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#poem {
+    background-color: rgb(0, 0, 0);
+}
+
+#poemTitle {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#line1 {
+    color: rgb(242, 59, 59);
+}
+
+#line2 {
+    color: rgb(240, 139, 23);
+}
+
+#line3 {
+    color: rgb(245, 237, 23);
+}
+
+#line4 {
+    color: #57E569;
+}
+
+#line5 {
+    color: #3F55F0;
+}
+
+#line6 {
+    color: #BD1FDC;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: tomato;
+}
+
+a:hover {
+    color: goldenrod;
+    background-color: khaki;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 3px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.HeadingRow {
+    font-variant: small-caps;
+    font-weight: 600; 
+    background-color: rgba(215, 213, 107, .75);
+    text-align: center;
+}
+
+audio {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #b3f0ff;
+    border-radius: 20px;
+}

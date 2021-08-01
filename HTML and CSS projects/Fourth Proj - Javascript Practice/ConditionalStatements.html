@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>IF EXAMPLE</title>
+        
+        <script type="text/javascript">
+            var userAge = window.prompt("Please Enter Your Age:");
+                userAge = Number(userAge);
+        </script>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            if(userAge > 16) alert("This is a kids' zone - not for grown ups.");
+            else if(userAge > 5) alert("Welcome Dude!");
+            else if(userAge < 5) {
+                alert("You're too little, bro.");
+                window.close();
+            }
+            
+            
+        </script>
+    </body>
+</html>

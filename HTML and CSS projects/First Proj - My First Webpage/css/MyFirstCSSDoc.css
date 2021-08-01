@@ -1,0 +1,137 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+    
+h1, h2, h3 {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 36px;
+    color: purple;
+}
+
+h2 {
+    font-size: 18px;
+    color: black;
+    font-family: "Courier", Courier, monospace;
+}
+
+h3 {
+    font-size: 14px;
+    color: rebeccapurple;
+    font-family: "Courier", Courier, monospace;
+}
+
+header h2 {
+    font-weight: 400;
+    color: darkmagenta;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+p {
+    color: cadetblue;
+    font-style: italic;
+    font-weight: 500;
+    text-align: justify;
+}
+
+ul.a {
+    color: blue;
+}
+
+
+
+ol.a {
+    color: indianred;
+    list-style-type: upper-roman;
+}
+
+ul.b {
+    color: firebrick;
+}
+
+ol.b {
+    color: red;
+}
+
+dt {
+    font-weight: 600;
+    font-style: italic;
+    font-variant: small-caps;
+    color: goldenrod;
+}
+
+dd {
+    color: gold;
+    text-align: justify;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: tomato;
+}
+
+a:hover {
+    color: goldenrod;
+    background-color: khaki;
+}
+
+footer {
+    font-family: "Times New Roman", serif;
+}
+
+h2.q {
+    font-family: "Times New Roman", serif;
+}
+
+img.date {
+    max-width: 65%;
+    height: auto;
+    border-radius: 50%;
+    filter: sepia(85%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.tower {
+    max-width: 15%;
+    height: auto;
+    border-radius: 10px;
+}
+
+td.FirstColumn {
+    font-weight: 600;
+}
+
+.ColumnHeaders {
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+.FavBlue {
+    color: royalblue;
+}
+
+td.FavOrange {
+    color: orange;
+}
+
+td {
+    padding: 20px;
+}
+
+#aboutsection {
+    width: 30%;
+    float: right;
+    padding-left: 20px;
+}
+
+#aboutheader {
+    color: bisque;
+}

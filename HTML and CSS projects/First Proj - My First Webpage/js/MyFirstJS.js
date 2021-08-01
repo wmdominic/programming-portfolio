@@ -1,0 +1,1 @@
+window.alert("Welcome to this amazing page I made for my handsome boyfriend!!");
