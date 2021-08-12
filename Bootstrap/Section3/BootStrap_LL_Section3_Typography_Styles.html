@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags for Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Icon Fonts Style Sheet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <title>Learning Bootstrap with CSS!</title>
+    </head>
+
+    <body class="m-5">
+        <!--FONT SIZES-->
+        <!--There are different Bootstrap font size classes.-->
+        <!--h1, h2, p, h4, h5, h6 & fs-1, fs-2, fs-3, fs-4, fs-5, fs-6 are the same and both can be used for font sizing. The only difference is that the header classes have more boldness to them than the font-size classes.-->
+        <!--display-1, display-2, display-3, display-4, display-5, display-6 are a bit larger than headers and are meant to really stand out on the page.-->
+        <!--lead is meant for paragraphs that need to stand out, such as the beginning paragraph of a blog post.-->
+
+        <h1 class="text-center">Font Sizing Classes</h1>
+        <h2 class="my-5">Header Classes (h1, h2, p, h4, h5, h6)</h2>
+            <div style="width: fit-content;">
+                <p class="h1" style="background-color: paleturquoise;">Apples</p>
+                <p class="h2" style="background-color: paleturquoise;">Bananas</p>
+                <p class="p" style="background-color: paleturquoise;">Carrots</p>
+                <p class="h4" style="background-color: paleturquoise;">Dates</p>
+                <p class="h5" style="background-color: paleturquoise;">Eggplants</p>
+                <p class="h6" style="background-color: paleturquoise;">Figs</p>
+            </div>
+        
+        <h2 class="mt-5">Font-Size Classes (fs-1, fs-2, fs-3, fs-4, fs-5, fs-6)</h2>
+        <h3 class="mb-5">Notice that these are the same size, but not as bold as the Header Classes. I also noticed these have more space.</h3>
+            <div style="width: fit-content">
+                <p class="fs-1" style="background-color: pink;">Apples</p>
+                <p class="fs-2" style="background-color: pink;">Bananas</p>
+                <p class="fs-3" style="background-color: pink;">Carrots</p>
+                <p class="fs-4" style="background-color: pink;">Dates</p>
+                <p class="fs-5" style="background-color: pink;">Eggplants</p>
+                <p class="fs-6" style="background-color: pink;">Figs</p>
+            </div>
+
+        <h2 class="my-5">Display Classes (display-1, display-2, display-3, display-4, display-5, display-6)</h2>
+        <div style="width: fit-content;">
+            <p class="display-1" style="background-color: plum;">Mushrooms</p>
+            <p class="display-2" style="background-color: plum;">Nectarines</p>
+            <p class="display-3" style="background-color: plum;">Olives</p>
+            <p class="display-4" style="background-color: plum;">Peppers</p>
+            <p class="display-5" style="background-color: plum;">Radishes</p>
+            <p class="display-6" style="background-color: plum;">Turnips</p>
+        </div>
+
+        <h2 class="my-5">Lead Class [used for paragraphs] (lead)</h2>
+            <div style="width: fit-content;">
+                <p class="lead" style="background-color: peachpuff;">This is a lead paragraph followed by a regular paragraph, which is an excerpt of <em>Frankenstein</em> by Mary Shelley: You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings. I arrived here yesterday, and my first task is to assure my dear sister of my welfare and increasing confidence in the success of my undertaking.</p>
+                <p style="background-color: peachpuff;">I am already far north of London, and as I walk in the streets of Petersburgh, I feel a cold northern breeze play upon my cheeks, which braces my nerves and fills me with delight. Do you understand this feeling? This breeze, which has travelled from the regions towards which I am advancing, gives me a foretaste of those icy climes. Inspirited by this wind of promise, my daydreams become more fervent and vivid.</p>
+            </div>
+
+        <h1 class="text-center">Weight & Style Classes</h1>
+        <!--Weights are determined can be used to overwrite the font's weight b doing fw and one of five values: lighter, light, normal, bold, bolder. fw-{Value} -->
+        <!--CAUTION: Some fonts do NOT support certain weight values.-->
+        <!--There are two style classes (italic and normal). fst-{Value} -->
+
+        <h2 class="my-5">Weight Classes (fw-lighter, fw-light, fw-normal, fw-bold, fw-bolder)</h2>
+        <div style="width: fit-content;">
+            <p class="fw-lighter" style="background-color: lemonchiffon; font-size: 24px;">Mushrooms</p>
+            <p class="fw-light" style="background-color: lemonchiffon; font-size: 24px;">Nectarines</p>
+            <p class="fw-normal" style="background-color: lemonchiffon; font-size: 24px;">Olives</p>
+            <p class="fw-bold" style="background-color: lemonchiffon; font-size: 24px;">Peppers</p>
+            <p class="fw-bolder" style="background-color: lemonchiffon; font-size: 24px;">Radishes</p>
+        </div>
+
+        <h2 class="my-5">Style Classes (fst-italics, fst-normal)</h2>
+        <div style="width: fit-content;">
+            <p class="fst-italic" style="background-color: palegreen; font-size: 24px;">Mushrooms</p>
+            <p class="fst-normal" style="background-color: palegreen; font-size: 24px;">Nectarines</p>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
