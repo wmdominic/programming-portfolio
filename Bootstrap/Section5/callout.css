@@ -1,0 +1,19 @@
+/*Base class*/
+.callout {
+    border: 1px solid #ccc;
+    border-left: 4px solid #6c757d;
+}
+
+/* Modifier classes */
+.callout-info {
+    border-left: 4px solid #17a2b8;
+}
+.callout-warning {
+    border-left: 4px solid #ffc107;
+}
+.callout-success {
+    border-left: 4px solid #28a745;
+}
+.callout-danger {
+    border-left: 4px solid #dc3545;
+}

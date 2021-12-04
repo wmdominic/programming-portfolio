@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags for Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Icon Fonts Style Sheet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="callout.css">
+
+        <title>Learning Bootstrap with CSS!</title>
+    </head>
+
+    <body class="m-5">
+        <h1 class="m-5 text-center">Basic Grid Layout</h1>
+        <!--At the beginning of the course, we covered .container. Now we will add two more classes: .row and .column, which will set up the grid layout. Flexbox and CSS grid can also be implemented alongside / combined with Bootstrap grid classes, but these three grid classes are the foundations to a grid.-->
+        <ul class="list-group">
+            <li class="list-group-item w-25">.container</li>
+            <li class="list-group-item w-25">.row</li>
+            <li class="list-group-item w-25">.column</li>
+        </ul>
+        <div class="my-4 w-50 p-2 callout callout-info">Bootstrap Grid can be combined and used alongside Flexbox and CSS Grid.</div>
+
+        <h2 class="m-3">Basic Grid</h2>
+        <div class="container bg-info text-dark mb-5">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">Little Pig 1</h3>
+                    <p>The first little pig made his house of straw, but the big bad wolf came by. He huffed, and he puffed, and he blew the house down.</p>
+                </div>
+                <div class="col">
+                    <h3 class="text-center">Little Pig 2</h3>
+                    <p>The second little pig made his house of sticks, but the big bad wolf came by. He huffed, and he puffed, and he blew the house down.</p>
+                </div>
+                <div class="col">
+                    <h3 class="text-center">Little Pig 3</h3>
+                    <p>The third little pig made his house of bricks. The big bad wolf came and huffed and puffed. He huffed and puffed again, but couldn't blow down the brick house.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="m-3">Container Classes - Review</h2>
+        <div class="table-responsive-fluid mb-5">
+            <table class="table text-center text-wrap">
+                <thead class="bg-info">
+                    <tr>
+                        <th></th>
+                        <th>Extra Small<br>&lt; 576px</th>
+                        <th>Small<br>&#8805; 576px</th>
+                        <th>Medium<br>&#8805; 768px</th>
+                        <th>Large<br>&#8805; 992px</th>
+                        <th>X-Large<br>&#8805; 1200px</th>
+                        <th>XX-Large<br>&#8805; 1400px</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fw-bold">.container</td>
+                        <td>100%</td>
+                        <td>540px</td>
+                        <td>720px</td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">.container-sm</td>
+                        <td>100%</td>
+                        <td>540px</td>
+                        <td>720px</td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">.container-md</td>
+                        <td>100%</td>
+                        <td>-</td>
+                        <td>720px</td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">.container-lg</td>
+                        <td>100%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">.container-xl</td>
+                        <td>100%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">.container-xxl</td>
+                        <td>100%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1320px</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">.container-fluid</td>
+                        <td>100%</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="callout callout-info">To read the table above: When using the specific container class, the container will take up 100% of the viewport when it hits a size of 576 pixels or less (regardless of size). <br><br>Once the specified container class hits its particular breakpoint or px amount, it will remain at 100% of the container. <br><br>For example, .container-md will remain its designated size until the viewport reaches 768px (where the container will be a width of 720px). Once it reaches this point, it will remain at 100% width of the viewport. <br><br>For more, see Section 2: Containers.</div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>

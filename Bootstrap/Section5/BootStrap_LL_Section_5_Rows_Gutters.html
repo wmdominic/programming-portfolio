@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags for Bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Icon Fonts Style Sheet -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <title>Learning Bootstrap with CSS!</title>
+    </head>
+
+    <body class="m-5">
+        <h1 class="text-center m-5">Bootstrap Grid: Rows and Gutters</h1>
+        <!--Rows are designed to be column containers. When using containers, extra margin is implemented to provide space so containers do not mesh together. The row eliminates this extra margin with negative margins.-->
+        <h2 class="m-3">Example of Using Rows</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>This is Column One</h4>
+                    <p>This is information that Column One has. This information would be more helpful if it had something more significant to say. But it does not.</p>
+                </div>
+                <div class="col">
+                    <h4>This is Column Two</h4>
+                    <p>This is information that Column Two has. This information would be more helpful if it had something more significant to say. But it also does not.</p>
+                </div>
+                <div class="col">
+                    <h4>This is Column Three</h4>
+                    <p>This is information that Column Three has. This information would be more helpful if it had something more significant to say. But it, as with the others, does not.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>A New Row, One Less Column</h4>
+                    <p>This is all within the same div container, though it is a new row. Because it's within the same overall container, it continues to set up the rows in the same grid.</p>
+                </div>
+                <div class="col">
+                    <h4>But wait... What about the space?!</h4>
+                    <p>This row only has two columns, whereas the previous one had three. As you can see, it does not matter if one row has more or less columns as another. The columns will evenly split the space and will take up the width of the overall container.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Gutters start at 1.5rem or 24px, but this number is adjustable. this is done by using the gutter class.-->
+        <!--g-{DIRECTION}-(SIZE) DIR: x or y SIZE: 0, 1, 2, 3, 4, 5.-->
+        <h2 class="m-3">Gutter Space</h2>
+        <div class="container-fluid lh-sm">
+            <h3 class="mt-4 mb-3">gx-0</h3>
+            <div class="row gx-0">
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Summer:</h3>
+                        <p>I worked on coding and learning Bootstrap, so I can build my navbar for my website and build a recipe book site with Bootstrap grid.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Fall:</h3>
+                        <p>I am looking forward to my classes and creating many new experiences in my practicum. I also look forward to planning my Hawaiian getaway with Jeremy this winter!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid lh-sm">
+            <h3 class="mt-4 mb-3">gx-1</h3>
+            <div class="row gx-1">
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Summer:</h3>
+                        <p>I worked on coding and learning Bootstrap, so I can build my navbar for my website and build a recipe book site with Bootstrap grid.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Fall:</h3>
+                        <p>I am looking forward to my classes and creating many new experiences in my practicum. I also look forward to planning my Hawaiian getaway with Jeremy this winter!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid lh-sm">
+            <h3 class="mt-4 mb-3">gx-2</h3>
+            <div class="row gx-2">
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Summer:</h3>
+                        <p>I worked on coding and learning Bootstrap, so I can build my navbar for my website and build a recipe book site with Bootstrap grid.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Fall:</h3>
+                        <p>I am looking forward to my classes and creating many new experiences in my practicum. I also look forward to planning my Hawaiian getaway with Jeremy this winter!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid lh-sm">
+            <h3 class="mt-4 mb-3">gx-3</h3>
+            <div class="row gx-3">
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Summer:</h3>
+                        <p>I worked on coding and learning Bootstrap, so I can build my navbar for my website and build a recipe book site with Bootstrap grid.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Fall:</h3>
+                        <p>I am looking forward to my classes and creating many new experiences in my practicum. I also look forward to planning my Hawaiian getaway with Jeremy this winter!</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div class="container-fluid lh-sm">
+            <h3 class="mt-4 mb-3">gx-4</h3>
+            <div class="row gx-4">
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Summer:</h3>
+                        <p>I worked on coding and learning Bootstrap, so I can build my navbar for my website and build a recipe book site with Bootstrap grid.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Fall:</h3>
+                        <p>I am looking forward to my classes and creating many new experiences in my practicum. I also look forward to planning my Hawaiian getaway with Jeremy this winter!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid lh-sm">
+            <h3 class="mt-4 mb-3">gx-5</h3>
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Summer:</h3>
+                        <p>I worked on coding and learning Bootstrap, so I can build my navbar for my website and build a recipe book site with Bootstrap grid.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Fall:</h3>
+                        <p>I am looking forward to my classes and creating many new experiences in my practicum. I also look forward to planning my Hawaiian getaway with Jeremy this winter!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container overflow-hidden">
+            <h3 class="mt-4 mb-3">gy-0</h3>
+            <div class="row gy-0">
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Summer:</h3>
+                        <p>I worked on coding and learning Bootstrap, so I can build my navbar for my website and build a recipe book site with Bootstrap grid.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>This Fall:</h3>
+                        <p>I am looking forward to my classes and creating many new experiences in my practicum. I also look forward to planning my Hawaiian getaway with Jeremy this winter!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-0">
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>What I'm looking forward to:</h3>
+                        <p>I can't wait to get back into the physical classroom. I am excited to work alongside students as well as classmates, professors, and teachers.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border border-info border-2 p-2">
+                        <h3>What I'm Worried About:</h3>
+                        <p>Money and balancing school and work. Being a good role model and cheerleader for my students.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
